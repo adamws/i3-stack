@@ -53,8 +53,12 @@ func main() {
 
 	err = cmd.Run()
 	if err != nil {
-		log.Fatalf("cmd.Run() failed with %s\n", err)
+		log.Printf("cmd.Run() failed with %s\n", err)
 	}
 
 	RunCommand(fmt.Sprintf("layout %s", oldLayout))
+
+	if err != nil {
+		os.Exit(1)
+	}
 }
