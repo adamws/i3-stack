@@ -8,7 +8,7 @@ Alternative for [i3-swallow](https://github.com/jamesofarrell/i3-swallow) and [d
 
 ## Dependencies
 
-- go 1.17
+- go 1.17+
 
 ## Installation
 
